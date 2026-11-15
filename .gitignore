@@ -1,0 +1,33 @@
+# Node / npm
+frontend-react/node_modules/
+frontend-react/.pnp.*
+frontend-react/.npmrc
+frontend-react/.yarn/
+frontend-react/.yarnrc.yml
+
+# Build artefacts (you may keep dist if you want to version it)
+frontend-react/.vite/
+frontend-react/.cache/
+# Uncomment the next line if you prefer building on the server
+#frontend-react/dist/
+
+# WordPress installer archives
+*.zip
+*.tar.gz
+*.tgz
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.swp
+.idea/
+.vscode/
+
+# Temporary files
+.tmp/
+scratch/
+tools/

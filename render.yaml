@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: risegrowth-api
+    runtime: docker
+    plan: free
+    dockerfilePath: Dockerfile
+    healthCheckPath: /
+    autoDeploy: true
+
+  - type: web
+    name: risegrowth-frontend
+    runtime: static
+    plan: free
+    buildCommand: npm --prefix frontend-react install && npm --prefix frontend-react run build
+    staticPublishPath: frontend-react/dist
+    autoDeploy: true
